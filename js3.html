@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+  </script>
+  </head>
+  <body>
+    <!--    HTML    -->
+    <p id="q01">ときどきweb</p>
+    <!--    HTML    -->
+    <p id="q02">ときどきweb</p>
+    <!--    HTML    -->
+<p id="q03"></p>
+<!--    HTML    -->
+<p id="q04">エレン</p>
+<!--    HTML    -->
+<p id="q05">あああ</p>
+<!--    HTML    -->
+<ul id="q6">
+    <li>リスト1</li>
+    <li>リスト2</li>
+    <li>リスト3</li>
+</ul>
+<!--    HTML    -->
+<!--    HTML    -->
+<ul id="q6">
+    <li>リスト1</li>
+    <li>リスト2</li>
+    <li>リスト3</li>
+</ul>
+<!--    HTML    -->
+<div class="button">ぼたん</div>
+<!--    HTML    -->
+<p id="q9"></p>
+
+<style>
+.aaa {
+    color:#F00;}
+
+    .button {
+        padding: 5px 10px;
+        border:#666 solid 1px;
+        background:#FFF;
+        display:block;
+        width:100px;
+        text-align:center;
+        cursor:pointer;
+    }
+</style>
+
+    <script>$(function(){
+    $("#q01").css('color','red');
+
+});
+
+$(function(){
+    $("#q02").css({'color':'bule','background':'yellow'});
+});
+$(function(){
+    $("#q03").text("エレン");
+});
+$(function(){
+    $("#q04").text("駆逐してやるッ!!!");
+});
+
+$(function(){
+    $("#q05").html('<a href="#">いいい</a>');
+
+
+});
+
+$(function(){
+    $("#q6").addClass("aaa");
+});
+
+$(function(){
+    $("#q06 li").remove();
+});
+
+$(function(){
+    $(".button").click(function(){
+        alert("『クリックしますた』");
+    });
+});
+$(function(){
+    var q6 = $("p").css("color");
+    $("#q9").text(q6);
+});
+
+
+</script>
+
+  </body>
+</html>
